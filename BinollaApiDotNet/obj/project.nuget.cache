@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "oSiUZ7ubyVEFlgE0APGM19bDBsTQMFpGbPghAcnNHI8k5e0/TadqaIrvUDTWZjJPGFAasMR+iPuydNT84Mpk6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\munee\\Downloads\\GitHub Repos\\BinollaApiDotNet\\BinollaApiDotNet\\BinollaApiDotNet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\munee\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\munee\\.nuget\\packages\\websocketsharp-netstandard\\1.0.1\\websocketsharp-netstandard.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

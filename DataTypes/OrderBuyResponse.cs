@@ -2,6 +2,6 @@
 
 public class OrderBuyResponse
 {
-    public bool IsSuccess { get; set; }
+    public bool IsSuccessFull { get; set; }
     public string? Message { get; set; }
 }

@@ -13,11 +13,12 @@ using Newtonsoft.Json.Linq;
 public class WebSocketClientBinolla
 {
     private bool _canSendWss = true;
-
     private bool _isAuthorized = false;
     private string _uri;
     private ClientWebSocket _webSocket;
     private string upcommingMessageType = "";
+    public event WssCallBack OnWssMessage;
+    
 
     public WebSocketClientBinolla(string uri = "wss://ws3.binolla.com/socket.io/?EIO=4&transport=websocket")
     {
@@ -28,9 +29,11 @@ public class WebSocketClientBinolla
         _webSocket.Options.SetRequestHeader("Cache-Control", "no-cache");
         _webSocket.Options.SetRequestHeader("User-Agent", @"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36");
         
+        
     }
-
-
+    
+    public delegate void WssCallBack(string eventType, string message);
+    
     private void Log(string msg, bool inboud = false)
     {   
         return;

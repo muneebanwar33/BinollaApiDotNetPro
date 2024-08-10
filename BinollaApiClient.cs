@@ -41,6 +41,8 @@ public class BinollaApiClient
             
         }
     }
+    
+    
 
     /// <summary>
     /// Method to get current balance
@@ -154,7 +156,7 @@ public class BinollaApiClient
         Values.OrderOpenUuid = null;
         Values.OrderData = null;
         Values.FailedOrderOpen = null;
-        result.IsSuccess = false;
+        result.IsSuccessFull = false;
         result.Message = "Unknown Error";
         SendWss(sendStr);
         DateTime start = DateTime.Now;
@@ -163,21 +165,21 @@ public class BinollaApiClient
             if ((DateTime.Now - start).TotalSeconds > 10)
             {
                 Console.WriteLine("Timeout Order not Opened");
-                result.IsSuccess = false;
+                result.IsSuccessFull = false;
                 result.Message = "Timeout Order not Opened";
                 return result;
             }
 
             if (Values.FailedOrderOpen != null)
             {
-                result.IsSuccess = false;
+                result.IsSuccessFull = false;
                 result.Message = Values.FailedOrderOpen.Error;
                 return result;
             }
 
             if (Values.OrderData != null)
             {
-                result.IsSuccess = true;
+                result.IsSuccessFull = true;
                 result.Message = Values.OrderData.Deal.Uuid;
                 return result;
             }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Muneeb Anwar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07efb4e90fd727c033d809a92f7ea6207fec60a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bc5864beac0127fe17025829f626d150b73f0f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("BinollaApiDotNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BinollaApiDotNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1")]

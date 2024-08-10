@@ -8,16 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f967518-f00a-468e-aaf8-af9f5bd087d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinollaApiClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BinollaApiClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinollaApiDotNet.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BinollaApiDotNet.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTypes/OrderBuyResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataTypes/OrderBuyResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BinollaApiDotNet.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BinollaApiDotNet.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebSocketClientBinolla.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebSocketClientBinolla.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/BinollaApiDotNet.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/BinollaApiDotNet.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/BinollaApiDotNet.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/BinollaApiDotNet.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1722703511466</updated>
       <workItem from="1722703513036" duration="5927000" />
-      <workItem from="1723295126957" duration="3276000" />
+      <workItem from="1723295126957" duration="3833000" />
     </task>
     <servers />
   </component>

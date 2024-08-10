@@ -1,7 +1,7 @@
 
 # JOIN RISING DEVELOPERS COMMUNITY 🚀
 
-[![Discord](https://img.shields.io/discord/843927072789317376?color=blue&label=Join%20Community&logo=discord&style=for-the-badge)](https://discord.gg/cwdh7kb3Z)
+[![Discord](https://img.shields.io/discord/843927072789317376?color=blue&label=Join%20Community&logo=discord&style=for-the-badge)](https://discord.gg/UW4C5VhWCH)
 
 
 # BinollaApiDotNet(Unofficial)

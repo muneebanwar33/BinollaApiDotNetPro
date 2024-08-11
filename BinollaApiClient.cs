@@ -10,19 +10,23 @@ public class BinollaApiClient
 
 {
     private WebSocketClientBinolla _wsClient;
-    
+
+    /// <summary>
+    /// Constructor for BinollaApiClient class
+    /// </summary>
+    /// <param name="ssid">The ssid to be used for authentication</param>
     public BinollaApiClient(string ssid)
     {
         Values.SSID = ssid;
         _wsClient = new WebSocketClientBinolla();
     }
+
     /// <summary>
     /// Method to connect to websocket server
     /// </summary>
     /// <returns>Connection Status</returns>
     public bool Connect()
-    {   
-        
+    {
         _wsClient.ConnectAsync();
         DateTime start = DateTime.Now;
         while (true)
@@ -41,15 +45,17 @@ public class BinollaApiClient
             
         }
     }
-    
-    
+
 
     /// <summary>
     /// Method to get current balance
     /// </summary>
-    /// <returns>Current Balance</returns>
+    /// <returns>
+    /// The current balance.
+    /// Returns -1 if balance is not updated within 60 seconds.
+    /// </returns>
     public double GetBalance()
-    {   
+    {
         DateTime start = DateTime.Now;
         while (Values.BalanceUpdated == null)
         {
@@ -107,11 +113,12 @@ public class BinollaApiClient
         return GetBalance();
 
     }
-    
+
+
     /// <summary>
-    /// Check Availbale Open Assets And thier Payout
+    /// Method to get payment assets and their corresponding payout values
     /// </summary>
-    /// <returns>Dict of Assets And payout</returns>
+    /// <returns>A dictionary containing payment asset names as keys and their corresponding payout values as values</returns>
     public Dictionary<string, double> GetPayment()
     {
         var result = new Dictionary<string, double>();
@@ -136,14 +143,15 @@ public class BinollaApiClient
 
         return result;
     }
+
     /// <summary>
-    /// Method to Open A new Binary Order
+    /// Method to place a buy order.
     /// </summary>
-    /// <param name="active"></param>
-    /// <param name="direction"></param>
-    /// <param name="amount"></param>
-    /// <param name="expiry"></param>
-    /// <returns></returns>
+    /// <param name="active">The asset to be traded (e.g. EURUSD).</param>
+    /// <param name="direction">The direction of the trade (e.g. "call" for call/put options).</param>
+    /// <param name="amount">The amount to be traded.</param>
+    /// <param name="expiry">The expiry time for the trade in seconds.</param>
+    /// <returns>An instance of OrderBuyResponse, which contains the status of the order.</returns>
     public OrderBuyResponse Buy(string active, string direction, double amount, int expiry)
     {
         var result = new OrderBuyResponse();
@@ -187,12 +195,12 @@ public class BinollaApiClient
         
         return result;
     }
-    
+
     /// <summary>
     /// Method to Check The Win Amount of Order
     /// </summary>
-    /// <param name="uuid"></param>
-    /// <returns>CheckWinResponse</returns>
+    /// <param name="uuid">The unique identifier of the order</param>
+    /// <returns>The CheckWinResponse object which contains the result of the win check</returns>
     public CheckWinResponse CheckWin(string uuid)
     {
         var result = new CheckWinResponse();
@@ -214,16 +222,20 @@ public class BinollaApiClient
         return result;
         
     }
+
     /// <summary>
-    /// Private member to Send Message to Binolla Websocket Via Connection
+    /// Private member to send a message to the Binolla Websocket via the connection.
     /// </summary>
-    /// <param name="message"></param>
+    /// <param name="message">The message to be sent</param>
     private void SendWss(string message)
     {
         _wsClient.SendMessageAsync(message).GetAwaiter().GetResult();
     }
 
 
+    /// <summary>
+    /// Method to disconnect from the WebSocket server
+    /// </summary>
     public void Disconnect()
     {
         _wsClient.DisconnectAsync().GetAwaiter().GetResult();

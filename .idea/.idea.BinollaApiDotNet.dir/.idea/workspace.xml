@@ -9,7 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8f967518-f00a-468e-aaf8-af9f5bd087d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BinollaApiDotNet.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BinollaApiDotNet.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1722703511466</updated>
       <workItem from="1722703513036" duration="5927000" />
-      <workItem from="1723295126957" duration="3833000" />
+      <workItem from="1723295126957" duration="5639000" />
     </task>
     <servers />
   </component>

@@ -55,19 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\munee\\.nuget\\packages\\": {}
+    "/Users/muneebanwar/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\munee\\Downloads\\GitHub Repos\\BinollaApiDotNet\\BinollaApiDotNet.csproj",
+      "projectUniqueName": "/Users/muneebanwar/Documents/GitHub/BinollaApiDotNetPro/BinollaApiDotNet.csproj",
       "projectName": "BinollaApiDotNet",
-      "projectPath": "C:\\Users\\munee\\Downloads\\GitHub Repos\\BinollaApiDotNet\\BinollaApiDotNet.csproj",
-      "packagesPath": "C:\\Users\\munee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\munee\\Downloads\\GitHub Repos\\BinollaApiDotNet\\obj\\",
+      "projectPath": "/Users/muneebanwar/Documents/GitHub/BinollaApiDotNetPro/BinollaApiDotNet.csproj",
+      "packagesPath": "/Users/muneebanwar/.nuget/packages/",
+      "outputPath": "/Users/muneebanwar/Documents/GitHub/BinollaApiDotNetPro/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\munee\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/muneebanwar/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -89,8 +89,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -112,12 +113,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.5.24307.3/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
